@@ -1,0 +1,217 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+form> * {
+	outline: none;
+}
+
+
+.main-nav a {
+	text-decoration: none;
+	color: #666;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #eee;
+	color: #666;
+	margin-top: 60px;
+	
+}
+
+p {
+	line-height: 2;
+	text-align:justify;	
+	letter-spacing:.01em;
+}
+
+.small-caps {
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-size: .7rem;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.lighter {
+	font-weight: lighter;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.site-logo {
+	font-size: 2rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin: 0 1rem;
+	text-align:left;
+}
+
+.container1 {
+	max-width: 1200px;
+	margin: 0 auto; 
+}
+.container2 {
+	max-width: 1200px;
+	margin: 0 auto; 
+}
+.nav-bar2 {
+	position: fixed; /* lock to top */
+	top:0px;
+	width: 100%; /* full width */
+	background-color:#fafafa;
+	height: 30px;
+
+}
+
+.nav-bar {
+	position: fixed; /* lock to top */
+	top:30px;
+	width: 100%; /* full width */
+	background-color: white;
+	height: 60px;
+
+}
+
+.nav-bar .container1 {
+	display: flex;
+	align-items: center; /* vertically center */
+	height: 100%;
+}
+
+/* Hide checkbox that controls Mobile Nav Button*/
+#drop-down-cbox {
+	display: none;
+}
+
+/* Main Nav Desktop */
+.main-nav {
+	flex-grow: 1; /* fill remaining space */
+	display: flex;
+	justify-content: space-around; /* evenly space items */
+	align-items: center; /* center vertically */
+	
+}
+
+.main-nav2 {
+	flex-grow: 1; /* fill remaining space */
+	display: flex;
+	justify-content: space-around; /* evenly space items */
+	align-items: center; /* center vertically */
+	background-color:#88b77b;
+	color:white;
+}
+
+.main-nav2 li{
+	list-style: none;
+	width: 100%;
+	height: 30px;
+	line-height: 30px; /* vertically center text, matches height */
+	text-align:center;
+	font-size:12px;
+}
+.main-nav li{
+	display: block;
+	width: 100%;
+	height: 60px;
+	line-height: 60px; /* vertically center text, matches height */
+	
+}
+.main-nav li, a{
+text-align: center;
+	list-style: none;
+	}
+
+.main-nav li a,
+.main-nav li span {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.main-nav li a:hover,
+.main-nav li span:hover {
+	border-bottom: 4px solid #666;
+}
+
+.main-nav li > ul {
+	max-height: 0px; /* max-height instead of height, height can't transition to auto */
+	transition: all 500ms ease-in-out;
+	overflow: hidden; /* make it so nav doesn't show beyond the 0px max-height */
+}
+
+.main-nav li:hover > ul {
+	max-height: 420px; /* height x how many links */
+	height: auto;
+}
+
+.main-nav li > ul li a,
+.main-nav li > ul li span {
+	background-color: white;
+}
+
+.main-nav li > ul li a:hover,
+.main-nav li > ul li span:hover {
+	background-color: #666;
+	color: white;
+	border-bottom: none;
+	font-weight:bold;
+}
+
+footer {
+ padding:30px;
+ background-color:white;
+ width: 100%;
+ height:auto;
+ display: flex;
+ spacing:10px;
+ align-content: center;
+ font-size: 12px;
+ 
+ }
+
+.footer p{
+font-size:12px;
+color:#666;}
+
+.footer a:link{
+font-size:13px;
+color:#666;
+text-decoration:none;
+}
+
+.footer a:hover{
+color:#88b77b;
+font-weight:bold;
+}
+
+.footer a:visited{
+text-decoration:none;
+}
+.footer table{
+margin:0px;}
